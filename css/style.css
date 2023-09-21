@@ -257,6 +257,7 @@ header ul li a:hover{
 #feeds{
     width: 100%;
     height: 100%;
+    padding: 0px 0
 }
 .flex{
     display: flex;
@@ -281,6 +282,7 @@ header ul li a:hover{
     font-size: .75rem;
     color: var(--focus-color);
     font-weight: 600;
+    margin :0 0 30px 0
 }
 .feeds-img{
     width: 100%;
@@ -381,13 +383,14 @@ footer{
     background-color: var(--bg-color);
     width: 100%;
     height: 100%;
+    padding: 20px 0
 }
 footer .grid{
     display: grid;
     grid-template-columns: 40% 15% 15% 15% 15%;
 }
 footer .col{
-    padding-right: 10px;
+    padding: 10px 10px 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -414,7 +417,7 @@ footer .col a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    
     padding-bottom: 20px;
     text-align: center;
 }
@@ -434,17 +437,8 @@ footer .col a:hover{
 @media screen and (max-width: 678px) {
     footer .grid{
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-        grid-template-rows: 100% 50%;
-        padding-top: 50px;
-        margin-top: 50px;
-    }
-    .copyright h5{
-        font-size: 12px;
-        padding-bottom: 0;
-        margin: 0;
-    }
-
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));  
+    }        
     footer .col h1{
         font-size: 1.3rem;
     }
